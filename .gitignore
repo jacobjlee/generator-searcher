@@ -1,0 +1,15 @@
+# Ignore all
+*
+
+# Unignore all with extensions
+!*.*
+
+# Unignore all dirs
+!*/
+
+# Unignore LICENSE and Makefile
+!LICENSE
+!Makefile
+
+# Ignore .DS_Store
+.DS_Store
