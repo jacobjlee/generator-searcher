@@ -12,27 +12,21 @@ Consider giving it a star ⭐️ if it was useful!
   <img src="assets/images/logo.png" alt="logo" width="200"  height="auto" />
   <br/>
 
-  <h3><b>Minimal README Template</b></h3>
+  <h3><b>Generator & Searcher for a Geometry Processing Pipeline </b></h3>
 </div>
 <br/>
 
 <!-- About the Project -->
 ## About The Project
-Tired of complicated README templates? <br>
-This minimalistic template offers straightforward yet powerful project documentation. <br>
-Say goodbye to bulky emoji headers and extensive table of contents – enjoy a simple, clean approach.
+This repository hosts software implementations of a point generator and a point searcher. The generator creates random 2D points that satisfy certain constraints, while the searcher finds the three closest points and determines if they form a triangle.
 
 
-_**Click on `"use this template"` to kickstart your project with ease.**_
 
 <!-- Add tech stacks you used for the proejct -->
 ### Technologies
-Enumerate the technologies, frameworks, libraries, and tools used in the project.
-* [![][python-logo]][python-url]
-* [![][fastapi-logo]][fastapi-url]
-* [![][mongodb-logo]][mongodb-url]
-* [![][kubernetes-logo]][kubernetes-url]
-* [![][octopusdeploy-logo]][octopusdeploy-url]
+* ![][c-logo]
+* ![][python-logo]
+* ![][bash-logo]
 
 <br/>
 
@@ -40,29 +34,35 @@ Enumerate the technologies, frameworks, libraries, and tools used in the project
 ## Getting Started
 
 ### Requirements
-List any prerequisites or dependencies needed to run the project.
-
-<!-- example -->
-- Python 3.7+
-- FastAPI
-- MongoDB
-
-### Installation
-Outline the steps required to install and set up the project environment.
-
-<!-- example -->
-1. Clone the repository
-2. Install backend dependencies: `pip install -r requirements.txt`
-3. Install frontend dependencies: `npm install`
-4. Start the server: `python manage.py runserver`
-
+- C90+
+- Python 3.6+
 
 <br/>
 
 <!-- Usage -->
 ## Usage
-Describe how to use the project once it's set up. <br>
-Provide examples such as code snippets and screenshots.
+Makefile for this project provides a set of commands to `build`, `execute`, `test`, and `clean`.
+
+**Build the programs:**
+```bash
+make build
+```
+
+**Execute programs with sample arguments:**
+
+```bash
+make sample
+```
+
+**Test the generator and searcher:**
+```bash
+make test
+```
+
+**Clean Up Unnecessary Files:**
+```bash
+make clean
+```
 
 <br/>
 
@@ -70,25 +70,10 @@ Provide examples such as code snippets and screenshots.
 ## Roadmap
 Outlines upcoming features, improvements, and milestones for future development.
 
-<!-- example -->
-- [x] Implement user authentication system
-- [ ] Introduce a real-time messaging feature
-- [ ] Multi-language Support
-    - [ ] Korean
-    - [ ] DoggoLingo
-
-<br/>
-
-<!-- Contributing -->
-## Contributing
-Detail the instructions for contributing to the project.
-
-<!-- example -->
-1. Fork the repository.
-2. Create a new branch for your feature: `git checkout -b feature-name`.
-3. Make your changes and commit them: `git commit -m 'Add new feature'`.
-4. Push to the branch: `git push origin feature-name`.
-5. Submit a pull request.
+- [x] Develop a module to generate random 2D points satisfying specified constraints
+- [x] Create a module to search for the three closest points and determine if they form a triangle
+- [x] Write a comprehensive Bash script to automate testing of the Generator and Searcher modules
+- [x] Develop a Makefile to streamline the build and execution process of the project
 
 <br/>
 
@@ -100,16 +85,9 @@ Licensed under the MIT License - see the LICENSE file for details.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- Stack Logos and Links -->
+[c-logo]: https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white
 [python-logo]: https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54
-[python-url]: https://www.python.org/
-[fastapi-logo]: https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi
-[fastapi-url]:https://fastapi.tiangolo.com/
-[mongodb-logo]: https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white
-[mongodb-url]: https://www.mongodb.com/
-[kubernetes-logo]: https://img.shields.io/badge/kubernetes-%23326ce5.svg?style=for-the-badge&logo=kubernetes&logoColor=white
-[kubernetes-url]: https://kubernetes.io/
-[octopusdeploy-logo]: https://img.shields.io/badge/octopus%20deploy-0D80D8?style=for-the-badge&logo=octopusdeploy&logoColor=white
-[octopusdeploy-url]: https://octopus.com/company
+[bash-logo]: https://img.shields.io/badge/Shell_Script-121011?style=for-the-badge&logo=gnu-bash&logoColor=white
 
 <!-- 
 Reference
